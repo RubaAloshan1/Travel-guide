@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weather</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="\stylesheet\Weatherstyle.css" />
+
+ <!-- Bootstrap core CSS -->
+ <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+ <!-- Additional CSS Files -->
+ <link rel="stylesheet" href="assets/css/templatemo-woox-travel.css">
+
+</head>
+<body>
+
+   <!-- ***** Header Area Start ***** -->
+        
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                   
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <% if (currentUser) { %>
+                      <p style="text-align: right; color: white; margin-top: 20px">Welcome, <%= currentUser.name %>! </p>
+                  <% } else { %>
+                      <p style="text-align: right; color: white; margin-top: 20px">Welcome, Guest! </p>
+                  <% } %>
+
+                    <ul class="nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/airbnb">Villas</a></li>
+                        <li><a href="/Activities">Activities</a></li>
+                        <li><a href="/Weather"class="active">Weather</a></li>
+                        <li><a href="/users/logout">Logout</a>
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+
+<div id="container">
+<div id="header"><h1>Mauritius Weather</h1></div>
+  <div id="wrapper">
+    <div id="content">
+      <h3><strong> Mauritius experiences two main seasons.</strong></h3><br>
+    <p><p>Mauritius, an island nation located in the Indian Ocean, enjoys a tropical climate characterized by warm temperatures and high humidity throughout the year. The weather in Mauritius is influenced by its proximity to the Equator, as well as the southeast trade winds that blow across the island. The average temperature ranges from 23°C (73°F) in winter to 31°C (88°F) in summer, making it an ideal destination for those seeking a warm and sunny climate.
+
+      <br></br>Mauritius experiences two main seasons: a hot and humid summer season from November to April, and a relatively cooler and drier winter season from May to October. During the summer months, temperatures can soar, reaching up to 35°C (95°F), accompanied by high humidity. This period is also prone to tropical cyclones, which occasionally affect the island.
+      
+      <br></br>The winter season in Mauritius is characterized by milder temperatures and lower humidity. Daytime temperatures average around 24°C (75°F), while nighttime temperatures can drop to around 18°C (64°F). It is a popular time for tourists to visit the island, as the weather is pleasant, and the risk of cyclones is minimal.
+      
+      <br></br>Mauritius boasts a considerable amount of sunshine throughout the year, with an average of 7 to 8 hours of sunshine per day. This makes it an excellent destination for beach lovers and outdoor enthusiasts. The island's coastal areas are blessed with beautiful sandy beaches and crystal-clear turquoise waters, offering visitors the opportunity to enjoy water sports, snorkeling, and scuba diving in the warm Indian Ocean.
+      
+      <br></br>It's worth noting that the weather in Mauritius can vary across different regions of the island. The eastern and southern coastal regions tend to be slightly cooler and receive more rainfall, while the western and northern coastal areas are generally warmer and drier. The central plateau experiences cooler temperatures due to its higher elevation.
+      
+      <br></br>Mauritius experiences hot and humid weather during the summer season, with temperatures ranging from 28°C (82°F) to 31°C (88°F). The humidity levels can be quite high during this time, making the weather feel even hotter. It's essential to stay hydrated and take necessary precautions to protect yourself from the sun's strong rays. Additionally, the summer season is known for occasional tropical cyclones, which can bring heavy rainfall and strong winds.
+      
+      <br></br>In contrast, the winter season in Mauritius offers milder temperatures, with averages ranging from 21°C (70°F) to 24°C (75°F) during the day. The evenings and nights can be cooler, with temperatures dropping to around 18°C (64°F). The weather is generally drier during this time, making it an ideal period for outdoor activities and exploring the island's natural beauty.
+      
+      <br></br>Overall, Mauritius enjoys a tropical climate that provides a warm and inviting atmosphere year-round. Whether you visit during the summer or winter season, you can expect pleasant temperatures, ample sunshine, and the opportunity to explore the island's breathtaking natural wonders.
+   
+      <br><br>
+<center>
+<img src="\images\Weatherimg.jpg" style="width: 800px; height: 400px;">
+</center>
+  
+  <br>
+      <footer>
+        <div class="container">
+          <div class="row">
+            
+          </div>
+        </div>
+      </footer>
+ 
+</body>
+</html>

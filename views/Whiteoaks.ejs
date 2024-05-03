@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simple House Template</title>
+	<link href="/stylesheet/Villastyle.css" rel="stylesheet" />
+	<link rel="stylesheet" href="/stylesheet/Airbnbstyle.css">
+
+</head>
+
+<body> 
+
+
+<div class="topnav" id="myTopnav">
+  <a href="/">Home</a>
+  <a href="/airbnb">Villas</a>
+  <a href="/chamgaia">Chamgaia</a>
+  <a href="/Fauverelle" >Villa Fauverelle</a>
+  <a href="/Whiteoaks" class="active">White Oaks Villa</a>
+  <% if (currentUser) { %>
+    <a href="/logout" class="logout2" style="float: right;">Logout</a>
+<% } else { %>
+  <a href="/login" class="logout2" style="float: right;">login</a>
+<% } %>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll">
+                <img src="\images\villa3\cover.jpg" style="width: 1200px; height: 430px;">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="\images\Reviews\simple-house-logo.png" alt="Logo" class="tm-site-logo" /> 
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">White Oaks Villa</h1>
+                                <h6 class="tm-site-description">Home</h6>	
+
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="Whiteoaks" class="tm-nav-link" style="text-decoration: underline;">Home</a></li>
+								<li class="tm-nav-li"><a href="WhiteoakReviews" class="tm-nav-link">Reviews</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Welcome to White Oaks Villa</h2>
+				<p class="col-12 text-center">
+
+					Featuring a terrace, all units include a seating and dining area. Some units feature a balcony and/or patio. 
+          There is also a kitchen, fitted with a dishwasher. An oven, a microwave and toaster are also available, 
+          as well as a kettle. Every unit features a private bathroom with free toiletries. Bed linen is provided.
+				</header>
+  </head>
+  <body>
+    <div class="slideshow">
+      <!--Villa one-->
+    <div class="slide">
+      <!-- Slideshow container -->
+  <div class="slideshow-container">
+  
+ <!-- Full-width images with number and caption text -->
+      
+ <div class="mySlides1 fade">
+  <div class="numbertext">1 / 5</div>
+  <img class="img2" src="\images\villa3\exterior1.jpg" style="width:100%">
+  <span  class="caption"><strong>Exterior </strong></span>
+  <p>Where nature becomes your personal playground.</p>
+</div>
+
+
+<div class="mySlides1 fade img2">
+  <div class="numbertext">2 / 5</div>
+  <img class="img2" src="\images\villa3\exterior6.jpg" style="width:100%">
+  <span  class="caption"><strong>Exterior  </strong></span>
+  <p>Where nature becomes your personal playground.</p>
+</div>
+
+<div class="mySlides1 fade img2">
+  <div class="numbertext">3 / 5</div>
+  <img class="img2"src="\images\villa3\exterior3.jpg" style="width:100%">
+  <span  class="caption"><strong>Exterior </strong></span>
+  <p>Where nature becomes your personal playground.</p>
+</div>
+
+<div class="mySlides1 fade img2">
+  <div class="numbertext">4 / 5</div>
+  <img class="img2"src="\images\villa3\exterior4.jpg" style="width:100%">
+  <span  class="caption"><strong>Exterior  </strong></span>
+  <p>Where nature becomes your personal playground.</p>
+</div>
+
+<div class="mySlides1 fade img2">
+  <div class="numbertext">5 / 5</div>
+  <img class="img2"src="\images\villa3\exterior5.jpg" style="width:100%">
+  <span  class="caption"><strong>Exterior </strong></span>
+  <p>Where nature becomes your personal playground.</p>
+</div>
+
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+<a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+</div>
+<br>
+</div>
+<!--Villa two-->
+<div class="slide">
+  <!-- Slideshow container -->
+<div class="slideshow-container">
+
+<!-- Full-width images with number and caption text -->
+<div class="mySlides2 fade img2">
+  <div class="numbertext">1 / 5</div>
+  <img class="img2"src="\images\villa3\cozy2.jpg" style="width:100%">
+  <span  class="caption"><strong>Cozy sanctuaries</strong></span>
+  <p>Where warmth and tranquility embrace.</p>
+</div>
+
+<div class="mySlides2 fade img2">
+  <div class="numbertext">2 / 5</div>
+  <img class="img2"src="\images\villa3\cozy1.jpg" style="width:100%">
+  <span  class="caption"><strong>Cozy sanctuaries</strong></span>
+  <p>Where warmth and tranquility embrace.</p>
+</div>
+
+<div class="mySlides2 fade img2">
+  <div class="numbertext">3 / 5</div>
+  <img class="img2"src="\images\villa3\cozy3.jpg" style="width:100%">
+  <span  class="caption"><strong>Cozy sanctuaries</strong></span>
+  <p>Where warmth and tranquility embrace.</p>
+</div>
+
+<div class="mySlides2 fade img2">
+  <div class="numbertext">4 / 5</div>
+  <img class="img2"src="\images\villa3\cozy4.jpg" style="width:100%">
+  <span  class="caption"><strong>Cozy sanctuaries</strong></span>
+  <p>Where warmth and tranquility embrace.</p>
+</div>
+
+<div class="mySlides2 fade img2">
+  <div class="numbertext">5 / 5</div>
+  <img class="img2" src="\images\villa3\cozy5.jpg" style="width:100%">
+  <span  class="caption"><strong>Cozy sanctuaries</strong></span>
+  <p>Where warmth and tranquility embrace.</p>
+</div>
+
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+<br>
+</div>
+
+<!--Villa Three-->
+<div class="slide">
+  <!-- Slideshow container -->
+<div class="slideshow-container">
+
+<!-- Full-width images with number and caption text -->
+<div class="mySlides3 fade img2">
+  <div class="numbertext">1 / 5</div>
+  <img class="img2"src="\images\villa3\bed3.jpg" style="width:100%">
+  <span  class="caption"><strong>Interior </strong></span>
+  <p>Where style and comfort intertwine.</p>
+</div>
+
+<div class="mySlides3 fade img2">
+  <div class="numbertext">2 / 5</div>
+  <img class="img2"src="\images\villa3\bed1.jpg" style="width:100%">
+  <span  class="caption"><strong>Interior </strong></span>
+  <p>Where style and comfort intertwine.</p>
+</div>
+
+<div class="mySlides3 fade img2">
+  <div class="numbertext">3 / 5</div>
+  <img class="img2"src="\images\villa3\bathroom2.jpg" style="width:100%">
+  <span  class="caption"><strong>Interior </strong></span>
+  <p>Where style and comfort intertwine.</p>
+</div>
+
+<div class="mySlides3 fade img2">
+  <div class="numbertext">4 / 5</div>
+  <img class="img2"src="\images\villa3\bed4.jpg" style="width:100%">
+  <span  class="caption"><strong>Interior</strong></span>
+  <p>Where style and comfort intertwine.</p>
+</div>
+
+<div class="mySlides3 fade img2">
+  <div class="numbertext">5 / 5</div>
+  <img class="img2" src="\images\villa3\bed2.jpg" style="width:100%">
+  <span  class="caption"><strong>Interior</strong></span>
+  <p>Where style and comfort intertwine.</p>
+</div>
+
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+<a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+
+
+</div>
+<br>
+    </div>
+  </div>
+  <div class="tm-section tm-container-inner">
+    <div class="row2">
+        <div class="col-md-6">
+            <figure class="tm-description-figure">
+                <img src="\images\villa3\main.jpg" alt="Image" class="img-fluid" />
+            </figure>
+        </div>
+        <div class="col-md-6">
+            <div class="tm-description-box"> 
+                <h4 class="tm-gallery-title">Private Beach, Car Hire, and Tropical Delights!</h4>
+                <p class="tm-mb-45">Embark on a blissful getaway at White Oaks Villas, where a world of enchantment awaits. 
+                  Nestled amidst breathtaking natural beauty, this extraordinary property boasts a private beach area that 
+                  beckons guests to unwind and soak up the sun-kissed shores. For those eager to explore the surrounding wonders,
+                   the convenience of car hire services allows for seamless adventures to unfold. Immerse yourself in the idyllic 
+                   charm of Belle Mare, located just 31 kilometers away, or venture to the captivating Mont Choisy, a mere 3.9 
+                   kilometers from the villa. The journey to this enchanting retreat is made effortlessly with the Sir Seewoosagur
+                    Ramgoolam Airport a mere 46 kilometers away. And to ensure absolute peace of mind, complimentary private 
+                    parking is available on-site, granting guests the freedom to explore at their leisure. Discover a haven where 
+                    luxury and convenience harmonize with the allure of a private beach and endless possibilities for unforgettable 
+                    memories at White Oaks Villas.
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <div class="tm-container-inner-2 tm-map-section">
+        <div class="row">
+            <h2 class="col-12 text-center tm-section-title">Location</h2>
+
+            <div class="col-12">
+                <div class="tm-map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.6114793271913!2d57.524714073699975!3d-20.047341741970246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c5336f3d6ef01%3A0x6731b248486cb2f7!2sWhite%20Oaks%20Villas!5e1!3m2!1sen!2ssa!4v1696865251432!5m2!1sen!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
+            </div>
+        </div>
+    </div>		
+    <a href="/Airbnb"><button class="tm-btn tm-btn-default tm-right">Back</button></a>
+  
+  <script type="text/javascript" src="/javascript/Airbnb.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Handle click on paging links
+			$('.tm-paging-link').click(function(e){
+				e.preventDefault();
+				
+				var page = $(this).text().toLowerCase();
+				$('.tm-gallery-page').addClass('hidden');
+				$('#tm-gallery-page-' + page).removeClass('hidden');
+				$('.tm-paging-link').removeClass('active');
+				$(this).addClass("active");
+			});
+		});
+	</script>
+</body>
+</html>

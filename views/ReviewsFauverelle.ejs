@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simple House - Contact Page</title>
+    <link href="css/all.min.css" rel="stylesheet" />
+	<link href="/stylesheet/villastyle.css" rel="stylesheet" />
+	
+</head>
+<body> 
+
+<div class="topnav" id="myTopnav">
+	<a href="/">Home</a>
+	<a href="/airbnb">Villas</a>
+	<a href="/chamgaia" >Chamgaia</a>
+	<a href="/Fauverelle" class="active" >Villa Fauverelle</a>
+	<a href="/Whiteoaks">White Oaks Villa</a>
+	<% if (currentUser) { %>
+		<a href="/logout" class="logout2" style="float: right;">Logout</a>
+	<% } else { %>
+	  <a href="/login" class="logout2" style="float: right;">login</a>
+	<% } %>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll">
+                <img src="\images\villa2\villa2coverimg.jpg" style="width: 1200px; height: 430px;">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="\images\Reviews\simple-house-logo.png" alt="Logo" class="tm-site-logo" /> 
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">Villa Anse Fauverelle</h1>
+								<h6 class="tm-site-description">Reviews</h6>	
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+                                <li class="tm-nav-li"><a href="/Fauverelle" class="tm-nav-link">Home</a></li>
+								<li class="tm-nav-li"><a href="#" class="tm-nav-link"style="text-decoration: underline;">Reviews</a></li>							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Reviews page</h2>
+				<p class="col-12 text-center">Welcome to our review page, a space where experiences converge. 
+                    Share your thoughts, insights, and evaluations on the villa, services, and more. Empower others 
+                    with your reviews and make informed decisions through shared experiences.
+
+                </p>
+			</header>
+
+			<div class="tm-container-inner-2 tm-contact-section">
+				<div class="row">
+					<div class="col-md-6">
+					</div>
+				<!--comments-->
+				<% if (editcomment?._id) { %>
+					<form action="/comments/<%= editcomment._id %>" method="post">
+					<input type="hidden" name="_id" value="<%= editcomment?._id %>">
+					<% } else { %>
+						<form action="/comments/post" method="post">
+							<input type="hidden" name="postId" value="2">
+							<% } %>
+                    <div class="commment">
+                        <div class="container mt-5">
+                        <div class="d-flex justify-content-center row">
+                            <div class="col-md-8">
+                                <div class="d-flex flex-column comment-section">
+                                    <div class="bg-white p-2">
+                                        <div class="d-flex flex-row user-info">
+                                            <div class="d-flex flex-column justify-content-start ml-2"><span class="d-block font-weight-bold name">Share your thoughts.</span><span class="date text-black-50"></span></div>
+                                        </div>
+                                        <div class="mt-2">
+                                            <p class="comment-text">Please take a moment to leave a review and share your thoughts on your experience.</p>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white">
+                                        <div class="d-flex flex-row fs-12">
+                                    </div>
+									<% if (currentUser) { %>
+										<div class="bg-light p-2 comment-input-section">
+										  <div class="d-flex flex-row align-items-start">
+											<% if (editcomment?._id) { %>
+												<textarea
+												style="width: 970px; height: 100px;"
+												class="form-control ml-1 shadow-none textarea"
+												name="content">
+												<%= editcomment.content %>
+											</textarea>
+												<% } else { %>
+													<textarea
+													style="width: 970px; height: 100px;"
+												class="form-control ml-1 shadow-none textarea"
+												name="content">
+											</textarea>
+													<% } %>
+										  </div>
+										  <div class="form-group tm-d-flex">
+											<% if (editcomment?._id) { %>
+												<button type="submit"
+														class="tm-btn tm-btn-success tm-btn-right">
+														Update
+													</button>
+												<% } else { %>
+													<button type="submit"
+													class="tm-btn tm-btn-success tm-btn-right">
+													Comment
+												</button>
+													<% } %>
+										  </div>
+										</div>
+									  <% } %>
+        
+                                </div>
+								<!-- views/comments.ejs -->
+
+								<h2>Comments:</h2>
+								<br>
+								<!-- comment section start from -->
+								<ul>
+								<% comments.forEach(comment => { %>
+									<li class="comment-box">
+									<strong>Author: <%= comment.name %></strong>
+									<p><%= comment.content %></p>
+									<% if (currentUser && comment.userId === currentUser.id.toString()) { %>
+										<a href="/comments/<%= comment._id %>/edit">Edit</a>
+										<a href="/comments/<%= comment._id %>/delete">Delete</a>
+									<% } %>
+									</li>
+								<% }); %>
+								</ul>
+
+                            </div>
+                        </div>
+                    </div>
+				</form>
+                    </div>
+			</div>		
+		</main>
+		
+	</div>
+    
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+			
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].addEventListener("click", function() {
+			    this.classList.toggle("active");
+			    var panel = this.nextElementSibling;
+			    if (panel.style.maxHeight) {
+			      panel.style.maxHeight = null;
+			    } else {
+			      panel.style.maxHeight = panel.scrollHeight + "px";
+			    }
+			  });
+			}	
+		});
+	</script>
+</body>
+</html>

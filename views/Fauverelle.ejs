@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simple House Template</title>
+	<link href="/stylesheet/Villastyle.css" rel="stylesheet" />
+	<link rel="stylesheet" href="/stylesheet/Airbnbstyle.css">
+
+</head>
+
+<body> 
+
+
+<div class="topnav" id="myTopnav">
+  <a href="/">Home</a>
+  <a href="/airbnb">Villas</a>
+  <a href="/chamgaia">Chamgaia</a>
+  <a href="/Fauverelle" class="active" >Villa Fauverelle</a>
+  <a href="/Whiteoaks">White Oaks Villa</a>
+  <% if (currentUser) { %>
+    <a href="/logout" class="logout2" style="float: right;">Logout</a>
+<% } else { %>
+  <a href="/login" class="logout2" style="float: right;">login</a>
+<% } %>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll">
+                <img class="coverimg"src="\images\villa2\villa2coverimg.jpg">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="\images\Reviews\simple-house-logo.png" alt="Logo" class="tm-site-logo" /> 
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">Villa Anse Fauverelle</h1>
+                                <h6 class="tm-site-description">Home</h6>	
+
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="Fauverelle" class="tm-nav-link"style="text-decoration: underline;">Home</a></li>
+								<li class="tm-nav-li"><a href="ReviewsFauverelle" class="tm-nav-link">Reviews</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Welcome to Villa Fauverelle</h2>
+				<p class="col-12 text-center">
+
+					The villa features 5 bedrooms, 5 bathrooms, bed linen, towels, a flat-screen TV with streaming services,
+           a dining area, a fully equipped kitchen, and a terrace with sea views.
+
+				</header>
+  </head>
+  <body>
+    <div class="slideshow">
+      <!--Villa one-->
+    <div class="slide">
+      <!-- Slideshow container -->
+  <div class="slideshow-container">
+  
+   <!-- Full-width images with number and caption text -->
+      
+   <div class="mySlides1 fade">
+    <div class="numbertext">1 / 5</div>
+    <img class="img2" src="\images\villa2\Villa Fauverelle img5.jpg" style="width:100%">
+    <span  class="caption"><strong>Exterior </strong></span>
+    <p>Where nature becomes your personal playground.</p>
+  </div>
+  
+
+  <div class="mySlides1 fade img2">
+    <div class="numbertext">2 / 5</div>
+    <img class="img2" src="\images\villa2\mainF.jpg" style="width:100%">
+    <span  class="caption"><strong>Exterior  </strong></span>
+    <p>Where nature becomes your personal playground.</p>
+  </div>
+
+  <div class="mySlides1 fade img2">
+    <div class="numbertext">3 / 5</div>
+    <img class="img2"src="\images\villa2\outdoors3.jpg" style="width:100%">
+    <span  class="caption"><strong>Exterior </strong></span>
+    <p>Where nature becomes your personal playground.</p>
+  </div>
+
+  <div class="mySlides1 fade img2">
+    <div class="numbertext">4 / 5</div>
+    <img class="img2"src="\images\villa2\outdoors4.jpg" style="width:100%">
+    <span  class="caption"><strong>Exterior  </strong></span>
+    <p>Where nature becomes your personal playground.</p>
+  </div>
+
+  <div class="mySlides1 fade img2">
+    <div class="numbertext">5 / 5</div>
+    <img class="img2"src="\images\villa2\outdoors5.jpg" style="width:100%">
+    <span  class="caption"><strong>Exterior </strong></span>
+    <p>Where nature becomes your personal playground.</p>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+</div>
+<br>
+  </div>
+  <!--Villa two-->
+  <div class="slide">
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides2 fade img2">
+    <div class="numbertext">1 / 5</div>
+    <img class="img2"src="\images\villa2\Villa Fauverelle img3.jpg" style="width:100%">
+    <span  class="caption"><strong>Cozy sanctuaries</strong></span>
+    <p>Where warmth and tranquility embrace.</p>
+  </div>
+
+  <div class="mySlides2 fade img2">
+    <div class="numbertext">2 / 5</div>
+    <img class="img2"src="\images\villa2\Villa Fauverelle img4.jpg" style="width:100%">
+    <span  class="caption"><strong>Cozy sanctuaries</strong></span>
+    <p>Where warmth and tranquility embrace.</p>
+  </div>
+
+  <div class="mySlides2 fade img2">
+    <div class="numbertext">3 / 5</div>
+    <img class="img2"src="\images\villa2\Villa Fauverelle img2.jpg" style="width:100%">
+    <span  class="caption"><strong>Cozy sanctuaries</strong></span>
+    <p>Where warmth and tranquility embrace.</p>
+  </div>
+
+  <div class="mySlides2 fade img2">
+    <div class="numbertext">4 / 5</div>
+    <img class="img2"src="\images\villa2\indoors4.jpg" style="width:100%">
+    <span  class="caption"><strong>Cozy sanctuaries</strong></span>
+    <p>Where warmth and tranquility embrace.</p>
+  </div>
+
+  <div class="mySlides2 fade img2">
+    <div class="numbertext">5 / 5</div>
+    <img class="img2" src="\images\villa2\indoors5.jpg" style="width:100%">
+    <span  class="caption"><strong>Cozy sanctuaries</strong></span>
+    <p>Where warmth and tranquility embrace.</p>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+<br>
+  </div>
+
+  <!--Villa Three-->
+ <div class="slide">
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides3 fade img2">
+    <div class="numbertext">1 / 5</div>
+    <img class="img2"src="\images\villa2\bed1.jpg" style="width:100%">
+    <span  class="caption"><strong>Interior </strong></span>
+    <p>Where style and comfort intertwine.</p>
+  </div>
+
+  <div class="mySlides3 fade img2">
+    <div class="numbertext">2 / 5</div>
+    <img class="img2"src="\images\villa2\bed2.jpg" style="width:100%">
+    <span  class="caption"><strong>Interior </strong></span>
+    <p>Where style and comfort intertwine.</p>
+  </div>
+
+  <div class="mySlides3 fade img2">
+    <div class="numbertext">3 / 5</div>
+    <img class="img2"src="\images\villa2\bathroom.jpg" style="width:100%">
+    <span  class="caption"><strong>Interior </strong></span>
+    <p>Where style and comfort intertwine.</p>
+  </div>
+
+  <div class="mySlides3 fade img2">
+    <div class="numbertext">4 / 5</div>
+    <img class="img2"src="\images\villa2\bed4.jpg" style="width:100%">
+    <span  class="caption"><strong>Interior</strong></span>
+    <p>Where style and comfort intertwine.</p>
+  </div>
+
+  <div class="mySlides3 fade img2">
+    <div class="numbertext">5 / 5</div>
+    <img class="img2" src="\images\villa2\bed5.jpg" style="width:100%">
+    <span  class="caption"><strong>Interior</strong></span>
+    <p>Where style and comfort intertwine.</p>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+
+  
+</div>
+<br>
+    </div>
+  </div>
+  <div class="tm-section tm-container-inner">
+    <div class="row2">
+        <div class="col-md-6">
+            <figure class="tm-description-figure">
+                <img src="\images\villa2\infopic.jpg" alt="Image" class="img-fluid" />
+            </figure>
+        </div>
+        <div class="col-md-6">
+            <div class="tm-description-box"> 
+                <h4 class="tm-gallery-title" >Villa Fauverelle, Indulge in Beauty and Adventure!</h4>
+                <p class="tm-mb-45">At Villa Fauverelle, guests are offered a range of delightful amenities, 
+                  including beauty services to enhance their stay. Whether indulging in a relaxing massage or 
+                  rejuvenating facial, guests can truly pamper themselves during their visit. Furthermore, for 
+                  those seeking to explore the picturesque surroundings, the accommodation provides exciting 
+                  options such as cycling, canoeing, and walking tours. Immerse yourself in the natural beauty of 
+                  the area while engaging in these recreational activities. Additionally, should guests wish to 
+                  venture further afield, the accommodating staff can arrange a convenient car rental service, 
+                  ensuring seamless transportation for memorable excursions. At Villa Fauverelle, every aspect of 
+                  your stay is thoughtfully catered to, allowing you to create cherished memories amidst the 
+                  stunning backdrop of the destination.
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="tm-container-inner-2 tm-map-section">
+        <div class="row">
+            <h2 class="col-12 text-center tm-section-title">Location</h2>
+
+            <div class="col-12">
+                <div class="tm-map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5397.230077181408!2d57.69194177425687!3d-20.396093785781414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217cf5c5700aa7a1%3A0x1b75d73a7749ea33!2sAnse%20Fauverelle!5e1!3m2!1sen!2ssa!4v1696865076589!5m2!1sen!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                
+                </div>
+                </div>
+        </div>
+    </div>		
+    <a href="/Airbnb"><button class="tm-btn tm-btn-default tm-right">Back</button></a>
+  
+  <script type="text/javascript" src="/javascript/Airbnb.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Handle click on paging links
+			$('.tm-paging-link').click(function(e){
+				e.preventDefault();
+				
+				var page = $(this).text().toLowerCase();
+				$('.tm-gallery-page').addClass('hidden');
+				$('#tm-gallery-page-' + page).removeClass('hidden');
+				$('.tm-paging-link').removeClass('active');
+				$(this).addClass("active");
+			});
+		});
+	</script>
+</body>
+</html>

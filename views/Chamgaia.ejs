@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simple House Template</title>
+
+	<link href="/stylesheet/Villastyle.css" rel="stylesheet" />
+	<link rel="stylesheet" href="/stylesheet/Airbnbstyle.css">
+  
+
+</head>
+
+<body> 
+
+<div class="topnav" id="myTopnav">
+ 
+  <a href="/">Home</a>
+  <a href="/airbnb">Villas</a>
+  <a href="/chamgaia" class="active" >Chamgaia</a>
+  <a href="/Fauverelle">Villa Fauverelle</a>
+  <a href="/Whiteoaks">White Oaks Villa</a>
+  <% if (currentUser) { %>
+    <a href="/login" class="logout2" style="float: right;">Logout</a>
+<% } else { %>
+  <a href="/login" class="logout2" style="float: right;">login</a>
+<% } %>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll">
+                <img class="coverimg" src="\images\Reviews\ChamGai Exterior1 - Copy.jpg">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="\images\Reviews\simple-house-logo.png" alt="Logo" class="tm-site-logo" /> 
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">ChamGaia off-grid eco-villa</h1>
+                                <h6 class="tm-site-description">Home</h6>	
+
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="Chamgaia" class="tm-nav-link "style="text-decoration: underline;">Home</a></li>
+								<li class="tm-nav-li"><a href="Reviews" class="tm-nav-link">Reviews</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Welcome to ChamGaia</h2>
+				<p class="col-12 text-center">
+
+					The villa comes with 4 bedrooms, 4 bathrooms, bed linen, towels, a flat-screen TV with streaming services, a dining area, a fully equipped kitchen, and a terrace with mountain views.
+					
+					The villa offers an outdoor fireplace. Both a bicycle rental service and a car rental service are available at ChamGaia off-grid eco-villa, while cycling and hiking can be enjoyed nearby.
+					
+				</header>
+  </head>
+  <body>
+    <div class="slideshow">
+      <!--Villa one-->
+    <div class="slide">
+      <!-- Slideshow container -->
+  <div class="slideshow-container">
+  
+    <!-- Full-width images with number and caption text -->
+      
+    <div class="mySlides1 fade">
+      <div class="numbertext">1 / 5</div>
+      <img class="img2" src="\images\villa1\Exterior6.jpg" style="width:100%">
+      <span  class="caption"><strong>Exterior </strong></span>
+      <p>Where nature becomes your personal playground.</p>
+    </div>
+    
+  
+    <div class="mySlides1 fade img2">
+      <div class="numbertext">2 / 5</div>
+      <img class="img2" src="\images\villa1\ChamGai Exterior2.jpg" style="width:100%">
+      <span  class="caption"><strong>Exterior </strong></span>
+      <p>Where nature becomes your personal playground.</p>
+    </div>
+  
+    <div class="mySlides1 fade img2">
+      <div class="numbertext">3 / 5</div>
+      <img class="img2"src="\images\villa1\ChamGai Exterior1.jpg" style="width:100%">
+      <span  class="caption"><strong>Exterior </strong></span>
+      <p>Where nature becomes your personal playground.</p>
+    </div>
+  
+    <div class="mySlides1 fade img2">
+      <div class="numbertext">4 / 5</div>
+      <img class="img2"src="\images\villa1\Interior4.jpg" style="width:100%">
+      <span  class="caption"><strong>Exterior  </strong></span>
+      <p>Where nature becomes your personal playground.</p>
+    </div>
+  
+    <div class="mySlides1 fade img2">
+      <div class="numbertext">5 / 5</div>
+      <img class="img2"src="\images\villa1\Exterior5.jpg" style="width:100%">
+      <span  class="caption"><strong>Exterior </strong></span>
+      <p>Where nature becomes your personal playground.</p>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+  </div>
+  <br>
+    </div>
+    <!--Villa two-->
+    <div class="slide">
+      <!-- Slideshow container -->
+  <div class="slideshow-container">
+  
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides2 fade img2">
+      <div class="numbertext">1 / 5</div>
+      <img class="img2"src="\images\villa1\Interior5.jpg" style="width:100%">
+      <span  class="caption"><strong>Cozy sanctuaries</strong></span>
+      <p>Where warmth and tranquility embrace.</p>
+    </div>
+  
+    <div class="mySlides2 fade img2">
+      <div class="numbertext">2 / 5</div>
+      <img class="img2"src="\images\villa1\Interior6.jpg" style="width:100%">
+      <span  class="caption"><strong>Cozy sanctuaries</strong></span>
+      <p>Where warmth and tranquility embrace.</p>
+    </div>
+  
+    <div class="mySlides2 fade img2">
+      <div class="numbertext">3 / 5</div>
+      <img class="img2"src="\images\villa1\ChamGai Cozy3.webp" style="width:100%">
+      <span  class="caption"><strong>Cozy sanctuaries</strong></span>
+      <p>Where warmth and tranquility embrace.</p>
+    </div>
+  
+    <div class="mySlides2 fade img2">
+      <div class="numbertext">4 / 5</div>
+      <img class="img2"src="\images\villa1\ChamGai Cozy1.webp" style="width:100%">
+      <span  class="caption"><strong>Cozy sanctuaries</strong></span>
+      <p>Where warmth and tranquility embrace.</p>
+    </div>
+  
+    <div class="mySlides2 fade img2">
+      <div class="numbertext">5 / 5</div>
+      <img class="img2" src="\images\villa1\ChamGai Cozy2.webp" style="width:100%">
+      <span  class="caption"><strong>Cozy sanctuaries</strong></span>
+      <p>Where warmth and tranquility embrace.</p>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+  </div>
+  <br>
+    </div>
+  
+    <!--Villa Three-->
+   <div class="slide">
+      <!-- Slideshow container -->
+  <div class="slideshow-container">
+  
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides3 fade img2">
+      <div class="numbertext">1 / 5</div>
+      <img class="img2"src="\images\villa1\bed1.jpg" style="width:100%">
+      <span  class="caption"><strong>Interior </strong></span>
+      <p>Where style and comfort intertwine.</p>
+    </div>
+  
+    <div class="mySlides3 fade img2">
+      <div class="numbertext">2 / 5</div>
+      <img class="img2"src="\images\villa1\Interior3.jpg" style="width:100%">
+      <span  class="caption"><strong>Interior </strong></span>
+      <p>Where style and comfort intertwine.</p>
+    </div>
+  
+    <div class="mySlides3 fade img2">
+      <div class="numbertext">3 / 5</div>
+      <img class="img2"src="\images\villa1\Interior2.jpg" style="width:100%">
+      <span  class="caption"><strong>Interior </strong></span>
+      <p>Where style and comfort intertwine.</p>
+    </div>
+  
+    <div class="mySlides3 fade img2">
+      <div class="numbertext">4 / 5</div>
+      <img class="img2"src="\images\villa1\bed2.jpg" style="width:100%">
+      <span  class="caption"><strong>Interior</strong></span>
+      <p>Where style and comfort intertwine.</p>
+    </div>
+  
+    <div class="mySlides3 fade img2">
+      <div class="numbertext">5 / 5</div>
+      <img class="img2" src="\images\villa1\bed3.jpg" style="width:100%">
+      <span  class="caption"><strong>Interior</strong></span>
+      <p>Where style and comfort intertwine.</p>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+  
+    
+  </div>
+  <br>
+    </div>
+  </div>
+  <div class="tm-section tm-container-inner">
+    <div class="row2">
+        <div class="col-md-6">
+            <figure class="tm-description-figure">
+                <img src="images\villa1\Eco.jpg" alt="Image" class="img-fluid" />
+            </figure>
+        </div>
+        <div class="col-md-6">
+            <div class="tm-description-box"> 
+                <h4 class="tm-gallery-title">An Eco-Friendly Haven in Harmony with Nature</h4>
+                <p class="tm-mb-45">Perched within the embrace of the majestic mountains, an extraordinary 
+                  eco-friendly house seamlessly combines sustainable design and captivating aesthetics. 
+                  This architectural masterpiece not only blends harmoniously with its natural surroundings but 
+                  also exemplifies a deep commitment to environmental stewardship. Harnessing the power of the sun,
+                   solar panels adorn the house, converting sunlight into clean and renewable energy,
+                    reducing dependence on traditional power sources. Rainwater collection systems ingeniously 
+                    capture and store rainfall, providing a sustainable water supply for various needs and 
+                    minimizing water waste. Natural materials, carefully chosen for their eco-conscious properties, 
+                    grace every corner of the house, further enhancing its environmental sustainability. 
+                    Energy-efficient appliances and strategically placed windows maximize natural light and 
+                    ventilation, reducing the need for artificial lighting and cooling systems. The result is a 
+                    breathtaking dwelling that seamlessly coexists with nature, showcasing the beauty and 
+                    possibilities of sustainable living.
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="tm-container-inner-2 tm-map-section">
+        <div class="row">
+            <h2 class="col-12 text-center tm-section-title">Location</h2>
+
+            <div class="col-12">
+                <div class="tm-map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2740.6803709250466!2d57.37953997371601!3d-20.439747654381204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c6fabcef485af%3A0xccbd63511b2a7542!2sChamGaia!5e1!3m2!1sen!2ssa!4v1696865121530!5m2!1sen!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                
+                </div>
+            </div>
+        </div>
+    </div>		
+    <a href="/Airbnb"><button class="tm-btn tm-btn-default tm-right">Back</button></a>
+  
+  <script type="text/javascript" src="/javascript/Airbnb.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Handle click on paging links
+			$('.tm-paging-link').click(function(e){
+				e.preventDefault();
+				
+				var page = $(this).text().toLowerCase();
+				$('.tm-gallery-page').addClass('hidden');
+				$('#tm-gallery-page-' + page).removeClass('hidden');
+				$('.tm-paging-link').removeClass('active');
+				$(this).addClass("active");
+			});
+		});
+	</script>
+</body>
+</html>

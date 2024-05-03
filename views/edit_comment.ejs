@@ -1,0 +1,7 @@
+<h2>Edit Comment</h2>
+
+<form action="/comments/<%= comment._id %>" method="POST">
+  <input type="hidden" name="_id" value="<%= comment._id %>">
+  <textarea name="content" required><%= comment.content %></textarea>
+  <button type="submit">Save Changes</button>
+</form>

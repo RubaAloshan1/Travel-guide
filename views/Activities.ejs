@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Activites</title>
+
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="\stylesheet\Activitiesstyle.css"> 
+    <link rel="stylesheet" href="\stylesheet\Navbar.css">
+  
+      </head>
+ 
+      <body>
+       <!-- Navbar -->              
+<!-- ***** Header Area Start ***** -->
+    
+<header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                   
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <% if (currentUser) { %>
+                        <p style="text-align: right; color: white; margin-top: 20px">Welcome, <%= currentUser.name %>! </p>
+                    <% } else { %>
+                        <p style="text-align: right; color: white; margin-top: 20px">Welcome, Guest! </p>
+                    <% } %>
+
+                    <ul class="nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/airbnb"  >Villas</a></li>
+                        <li><a href="/Activities" style="text-decoration: underline;">Activites</a></li>
+                        <li><a href="/Weather">Weather</a></li>
+                        <li><a href="/users/logout">Logout</a>
+                    </ul>   
+                    
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  
+  <!-- ***** Header Area End ***** -->
+        <div class="tm-page-wrap mx-auto">
+            <section class="tm-banner">
+                <div class="tm-container-outer tm-banner-bg">
+                    <div class="container">
+
+                        <div class="row tm-banner-row tm-banner-row-header">
+                            <div class="col-xs-12">
+                                <div class="tm-banner-header">
+                                    <h1 class="text-uppercase tm-banner-title" style="color:white">Unleash the Adventure</h1>
+                                   
+                                    <p class="tm-banner-subtitle"> Dive into a World of Exciting Activities.</p>
+                                </div>    
+                            </div>  <!-- col-xs-12 -->                      
+                        </div> <!-- row -->
+                       
+                                <div class="form-row tm-search-form-row">
+
+                                    
+                                   
+                                </div>                              
+                                                        
+
+                        </div> <!-- row -->
+                        <div class="tm-banner-overlay"></div>
+                    </div>  <!-- .container -->                   
+                </div>     <!-- .tm-container-outer -->                 
+            </section>
+
+          
+            
+            <div class="tm-container-outer" id="tm-section-2">
+                <section class="tm-slideshow-section">
+                    <div class="tm-slideshow">
+                        <img src="\images\Activities\Snorkling.png" style="width: 600px; height: 400px; border-radius: 30px;" alt="Image">
+                           
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary">
+                        <h2 class="">Blue Bay snorkeling</h2>
+                        <p>Blue Bay is widely considered to be the best snorkeling spot in Mauritius, where crystal-clear turquoise waters, 
+                            vibrant coral reefs, and an abundance of colorful fish create a paradise for underwater enthusiasts.
+                        </p>
+                    </div>
+                </section>
+                <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">
+
+                    <div class="tm-right tm-slideshow tm-slideshow-highlight">
+                        <img src="\images\Activities\Ziplining.jpg" style="width: 600px; height: 400px; border-radius: 30px;" alt="Image">
+                        
+                    </div> 
+
+                    <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
+                        <h2 class="">La Vallée des Couleurs, Signature Zipline</h2>
+                        <p>Experience the exhilarating thrill of soaring through the skies on longest zipline, stretching an 
+                            incredible 1.5 km. Explore the breathtaking natural beauty of the surroundings from a bird's-eye.</p>
+                    </div>                        
+
+                </section>
+                <section class="tm-slideshow-section">
+                    <div class="tm-slideshow">
+                        <img src="\images\Activities\Horseback.jpg" style="width: 600px; height: 400px; border-radius: 30px;"alt="Image">
+                       
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary">
+                        <h2 class="">Horse riding in the lagoon of Black River</h2>
+                        <p>Spend a unique moment of relaxation in the Black River lagoon as you enjoy the company of a gentle horse 
+                            for an unforgettable hour. Immerse yourself in the tranquility of the surroundings, feeling the gentle
+                            breeze and listening to the soothing sounds of nature, creating a truly serene and magical experience.</p>
+                    </div>
+                </section>
+                <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">
+
+                    <div class="tm-right tm-slideshow tm-slideshow-highlight">
+                        <img src="\images\Activities\waterfall1.jpg" style="width: 600px; height: 400px; border-radius: 30px;" alt="Image">
+                        
+                    </div> 
+
+                    <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
+                        <h2 class="">Underwater Waterfall</h2>
+                        <p>Prepare to be captivated by the mesmerizing spectacle of the underwater waterfall in Mauritius. This natural 
+                            wonder creates an illusion of an ethereal cascade 
+                            descending beneath the ocean's surface. Witness the breathtaking beauty as the currents and sand formations
+                            create the illusion of a cascading waterfall, immersing you in a surreal underwater realm. 
+                            Dive into this enchanting phenomenon and embark on a once-in-a-lifetime adventure that will leave you in 
+                            awe of nature's extraordinary creations.</p>
+                    </div>                        
+
+                </section>
+                <section class="tm-slideshow-section">
+                    <div class="tm-slideshow">
+                        <img src="\images\Activities\safari.jpg" style="width: 600px; height: 400px; border-radius: 30px;"alt="Image">
+                       
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary">
+                        <h2 class="">Quad biking Safari</h2>
+                        <p>Experience the ultimate quad biking safari in Mauritius, where adventure meets wildlife. 
+                            Conquer rugged terrains, encounter captivating animals, and immerse yourself in the untamed beauty of nature.</p>
+                    </div>
+                </section>
+                
+            </div>        
+           
+
+            <footer>
+                <div class="container">
+                  <div class="row">
+                    
+                  </div>
+                </div>
+              </footer>
+            
+       
+       
+</body>
+</html>

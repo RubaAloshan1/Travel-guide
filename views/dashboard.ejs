@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="no-js">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>home</title>
+	<link rel="canonical" href="index.html" />
+	<meta property="og:locale" content="en_US" />
+
+     <link rel='stylesheet' id='contact-form-7-css'  href='\stylesheet\bootstrap.min.css' type='text/css' />
+     <link rel='stylesheet' id='uacf7-frontend-style-css'  href='\stylesheet\style.css' type='text/css' media='all' />
+     		
+      <!-- load stylesheets -->
+    <link rel="stylesheet" href="\stylesheet\Navbar.css">
+  
+
+</head>
+<body>
+    <!-- Navbar -->              
+<!-- ***** Header Area Start ***** -->
+    
+<header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                   
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <% if (currentUser) { %>
+                        <p style="text-align: right; color: white; margin-top: 20px">Welcome, <%= currentUser.name %>! </p>
+                    <% } else { %>
+                        <p style="text-align: right; color: white; margin-top: 20px">Welcome, Guest! </p>
+                    <% } %>
+
+                    <ul class="nav">
+                        <li><a href="/"class="active">Home</a></li>
+                        <li><a href="/airbnb"  >Villas</a></li>
+                        <li><a href="/Activities" style="text-decoration: underline;">Activites</a></li>
+                        <li><a href="/Weather">Weather</a></li>
+                        <li><a href="/users/logout">Logout</a>
+                    </ul>   
+                    
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+
+
+<div class="super_header double_line dude_mask" style="background-image: url('/images/Mauritius-Under-water-waterfall.jpg');">
+    <div class="overlayer"></div>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+              <h3>Travel information</h3>
+              <h1>Mauritius travel Guide</h1>
+          </div>
+        </div>
+    </div>
+</div>
+
+<div class="beige_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="blog_content on_safety">
+
+                  <div class="last_update_text_wrap">
+                    <div class="top_bluer_stats">						 
+						  <h2 style="color: white;"> Fascinating fact about Mauritius</h2>
+                    </div>
+                  </div>
+                    <p>The island nation is renowned for its unique and colorful wildlife, including the famous dodo bird. However, the dodo bird became extinct in the late 17th century, making Mauritius the only place in the world where this flightless bird once existed.</p>
+                        <div class="words_wrap">
+                            <div class="words">
+                         </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="plan_that_holiday text-center">
+
+<h2>Plan your Mauritius holiday</h2>
+<p>Want to know what to expect at every stage of your Mauritius holiday? Here’s our step-by-step guide.</p>
+<div class="connn">
+<div class="container">
+<div class="row">
+
+        <div class="col-md-2">
+            <div class="small_white_card" data-toggle="modal" data-target="#myModal_1">
+<div class="h6_wrap">
+    <a href="/airbnb"><h6>Villas</h6>
+</div>
+<svg width="76px" height="76px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16 2C8.27812 2 2 8.27812 2 16C2 23.7219 8.27812 30 16 30C23.7219 30 30 23.7219 30 16C30 8.27812 23.7219 2 16 2Z" fill="#FF5A5F"></path> <path d="M16.0003 19.6867C15.0825 18.5322 14.5426 17.5201 14.3626 16.6542C14.1826 15.9506 14.2546 15.3914 14.5605 14.9765C14.8845 14.4894 15.3704 14.2549 16.0003 14.2549C16.6302 14.2549 17.1162 14.4894 17.4401 14.9765C17.7461 15.3914 17.818 15.9506 17.6381 16.6542C17.4401 17.5382 16.9002 18.5484 16.0003 19.6867ZM21.0251 22.3566C19.4954 23.0241 17.9818 21.9597 16.686 20.5165C18.8295 17.8268 19.2254 15.7342 18.3058 14.3794C17.7659 13.6037 16.992 13.2248 16.0003 13.2248C14.0026 13.2248 12.903 14.9206 13.3349 16.8887C13.5869 17.9531 14.2528 19.1636 15.3146 20.5165C14.5182 21.4012 13.4733 22.4047 12.2191 22.519C10.4014 22.7896 8.97781 21.0217 9.62571 19.1978L14.2348 9.63307C14.6282 8.91403 15.1137 8.29812 15.9985 8.29812C16.6464 8.29812 17.1503 8.67696 17.3663 8.98363L22.3713 19.1978C22.8617 20.432 22.2398 21.8308 21.0251 22.3566ZM23.3468 18.837L19.0617 9.90367C18.2518 8.244 17.6759 7.25 16.0003 7.25C14.3446 7.25 13.6409 8.40455 12.921 9.90367L8.65386 18.837C7.73601 21.3644 9.62571 23.5833 11.9132 23.5833C12.0572 23.5833 12.2001 23.5653 12.3451 23.5653C13.5329 23.421 14.7585 22.6633 16.0003 21.3085C17.2421 22.6615 18.4677 23.421 19.6556 23.5653C19.8006 23.5653 19.9435 23.5833 20.0875 23.5833C22.3749 23.5851 24.2646 21.3644 23.3468 18.837Z" fill="white"></path> </g></svg>
+</a>
+</div>
+</div>
+<div class="modal fade" id="myModal_1" role="dialog">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal_heading trav_advice">
+ 
+</div>
+  <div class="modal_content_wrap">
+    <div class="procedure_wrap">
+      <div class="proc_tbl">
+        <div class="proc_tbl_row">
+          <div class="proc_tbl_cell">
+            
+          </div>
+          <div class="proc_tbl_cell text-center">
+            <svg width="76px" height="76px" viewBox="0 0 32 32" fill="none" ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16 2C8.27812 2 2 8.27812 2 16C2 23.7219 8.27812 30 16 30C23.7219 30 30 23.7219 30 16C30 8.27812 23.7219 2 16 2Z" fill="#FF5A5F"></path> <path d="M16.0003 19.6867C15.0825 18.5322 14.5426 17.5201 14.3626 16.6542C14.1826 15.9506 14.2546 15.3914 14.5605 14.9765C14.8845 14.4894 15.3704 14.2549 16.0003 14.2549C16.6302 14.2549 17.1162 14.4894 17.4401 14.9765C17.7461 15.3914 17.818 15.9506 17.6381 16.6542C17.4401 17.5382 16.9002 18.5484 16.0003 19.6867ZM21.0251 22.3566C19.4954 23.0241 17.9818 21.9597 16.686 20.5165C18.8295 17.8268 19.2254 15.7342 18.3058 14.3794C17.7659 13.6037 16.992 13.2248 16.0003 13.2248C14.0026 13.2248 12.903 14.9206 13.3349 16.8887C13.5869 17.9531 14.2528 19.1636 15.3146 20.5165C14.5182 21.4012 13.4733 22.4047 12.2191 22.519C10.4014 22.7896 8.97781 21.0217 9.62571 19.1978L14.2348 9.63307C14.6282 8.91403 15.1137 8.29812 15.9985 8.29812C16.6464 8.29812 17.1503 8.67696 17.3663 8.98363L22.3713 19.1978C22.8617 20.432 22.2398 21.8308 21.0251 22.3566ZM23.3468 18.837L19.0617 9.90367C18.2518 8.244 17.6759 7.25 16.0003 7.25C14.3446 7.25 13.6409 8.40455 12.921 9.90367L8.65386 18.837C7.73601 21.3644 9.62571 23.5833 11.9132 23.5833C12.0572 23.5833 12.2001 23.5653 12.3451 23.5653C13.5329 23.421 14.7585 22.6633 16.0003 21.3085C17.2421 22.6615 18.4677 23.421 19.6556 23.5653C19.8006 23.5653 19.9435 23.5833 20.0875 23.5833C22.3749 23.5851 24.2646 21.3644 23.3468 18.837Z" fill="white"></path> </g></svg>
+          </div>
+              </div>
+            </div>
+            <p class="side_info"><i>
+            </i></p>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+    
+        <div class="col-md-2">
+            <div class="small_white_card" data-toggle="modal" data-target="#myModal_3">
+      <div class="h6_wrap">
+       <a href="/activities"><h6>Adventure</h6>
+              </div>
+              <svg width="77px" height="77px" viewBox="-4.8 -4.8 57.60 57.60" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" fill="#000000" transform="rotate(45)" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"><rect x="-4.8" y="-4.8" width="57.60" height="57.60" rx="28.8" fill="#ece87e" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#a23434" stroke-width="1.44"><defs><style>.cls-1{fill:none;stroke:#a21ea4;stroke-linecap:round;stroke-linejoin:round;}</style></defs><path class="cls-1" d="M18.15,13.6V11.32A2.93,2.93,0,0,1,21.08,8.4h5.85a2.92,2.92,0,0,1,2.92,2.92V13.6M8.4,13.6H10v26H8.4a3.91,3.91,0,0,1-3.9-3.9V17.5a3.91,3.91,0,0,1,3.9-3.9Zm1.6,0H38v26H10Zm28,0h1.6a3.91,3.91,0,0,1,3.9,3.9V35.7a3.91,3.91,0,0,1-3.9,3.9H38v-26Z"></path></g><g id="SVGRepo_iconCarrier"><defs><style>.cls-1{fill:none;stroke:#a21ea4;stroke-linecap:round;stroke-linejoin:round;}</style></defs><path class="cls-1" d="M18.15,13.6V11.32A2.93,2.93,0,0,1,21.08,8.4h5.85a2.92,2.92,0,0,1,2.92,2.92V13.6M8.4,13.6H10v26H8.4a3.91,3.91,0,0,1-3.9-3.9V17.5a3.91,3.91,0,0,1,3.9-3.9Zm1.6,0H38v26H10Zm28,0h1.6a3.91,3.91,0,0,1,3.9,3.9V35.7a3.91,3.91,0,0,1-3.9,3.9H38v-26Z"></path></g></svg>
+            </a>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal_3" role="dialog">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal_heading trav_advice">
+                  <h2>Adventure</h2>
+              </div>
+              <img class="blue_close" data-dismiss="modal" src="images/blue_close.svg"/>
+                <div class="modal_content_wrap">
+                  <div class="procedure_wrap">
+                    <div class="proc_tbl">
+                      <div class="proc_tbl_row">
+                        <div class="proc_tbl_cell">
+                          
+                        </div>
+                        <div class="proc_tbl_cell text-center">
+                          <svg width="77px" height="77px" viewBox="-4.8 -4.8 57.60 57.60" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" fill="#000000" transform="rotate(45)" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"><rect x="-4.8" y="-4.8" width="57.60" height="57.60" rx="28.8" fill="#ece87e" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#a23434" stroke-width="1.44"><defs><style>.cls-1{fill:none;stroke:#a21ea4;stroke-linecap:round;stroke-linejoin:round;}</style></defs><path class="cls-1" d="M18.15,13.6V11.32A2.93,2.93,0,0,1,21.08,8.4h5.85a2.92,2.92,0,0,1,2.92,2.92V13.6M8.4,13.6H10v26H8.4a3.91,3.91,0,0,1-3.9-3.9V17.5a3.91,3.91,0,0,1,3.9-3.9Zm1.6,0H38v26H10Zm28,0h1.6a3.91,3.91,0,0,1,3.9,3.9V35.7a3.91,3.91,0,0,1-3.9,3.9H38v-26Z"></path></g><g id="SVGRepo_iconCarrier"><defs><style>.cls-1{fill:none;stroke:#a21ea4;stroke-linecap:round;stroke-linejoin:round;}</style></defs><path class="cls-1" d="M18.15,13.6V11.32A2.93,2.93,0,0,1,21.08,8.4h5.85a2.92,2.92,0,0,1,2.92,2.92V13.6M8.4,13.6H10v26H8.4a3.91,3.91,0,0,1-3.9-3.9V17.5a3.91,3.91,0,0,1,3.9-3.9Zm1.6,0H38v26H10Zm28,0h1.6a3.91,3.91,0,0,1,3.9,3.9V35.7a3.91,3.91,0,0,1-3.9,3.9H38v-26Z"></path></g></svg>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="side_info"><i>
+                    </i></p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    
+        
+        <div class="col-md-2">
+        <div class="small_white_card" data-toggle="modal" data-target="#myModal_6">
+    <div class="h6_wrap">
+        <a href="/Weather"><h6>Weather</h6>
+              </div>
+              <svg width="77px" height="77px" viewBox="-4.8 -4.8 57.60 57.60" ><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-4.8" y="-4.8" width="57.60" height="57.60" rx="28.8" fill="#7ed0ec" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.a,.b{fill:none;stroke:#000000;}.a{stroke-linecap:round;stroke-linejoin:round;}</style></defs><circle class="a" cx="24" cy="24" r="21.5"></circle><path class="a" d="M44.1,31.6A21.48,21.48,0,0,0,5.6,35.1"></path><path class="b" d="M13.5,42.8c-.5-2.3-.2-3.8,1.7-5.2a3.67,3.67,0,0,0,1.3-1.8,2.1,2.1,0,0,1,1.3-1.3A6.38,6.38,0,0,1,22,34c1.5.6,2.2,1.8,3.4,2.3a3.08,3.08,0,0,0,2.3.1c2.1-1,3.4.2,4.2,1.6A36.53,36.53,0,0,0,35,42.3"></path><path class="b" d="M29.7,36.1c-.1-1.8.5-2.5-1.1-2.5-.7,0-1.7,0-2-.5-.4-1-.8-1-1.5-1.2a3.31,3.31,0,0,0-1.9-.3c-.3.1.3,1.6-.5,1.5-.4-.1-.9-1.8-1.6-2.3a2.32,2.32,0,0,0-2.5.4c-1.4,1.3-2.3,1.6-3.2,1.1-.6-.3-.3-2.1.1-2.4.9-.6,1.3,0,2-1,.2-.3-.3-1,.2-1.9s2.5,0,3.3-1.1,2.8-2.7,4.4-1.6a4.37,4.37,0,0,0,1,.6c.3.2.6-.6,1-1s.6-.3,1.3-.3a17.39,17.39,0,0,0,3.4-1.3"></path><path class="a" d="M28.3,13.3l-1.8,1-1,1.8-1-1.8-1.8-1,1.8-1,1-1.8,1,1.8Z"></path><path class="a" d="M18.7,9.9l-1.3.7-.7,1.3L16,10.6l-1.3-.7L16,9.2,16.7,8l.7,1.3Z"></path><path class="a" d="M37.4,16.1l-1,.5-.5,1-.5-1-1-.5,1-.5.5-1,.5,1Z"></path><path class="a" d="M10.3,19.7l-1,.5-.5,1-.5-1-1-.5,1-.5.5-1,.5,1Z"></path></g></svg>
+            </a>
+            </div>
+        </div>
+      
+</body>
+</html>

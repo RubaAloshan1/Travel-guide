@@ -1,0 +1,313 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  
+    <head>
+  
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+      <title>Airbnb</title>
+  
+      <!-- Bootstrap core CSS -->
+      <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+      <!-- Additional CSS Files -->
+      <link rel="stylesheet" href="assets/css/fontawesome.css">
+      <link rel="stylesheet" href="assets/css/templatemo-woox-travel.css">
+  
+    </head>
+  
+  <body>
+  
+    <!-- ***** Header Area Start ***** -->
+    
+    <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                     
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <% if (currentUser) { %>
+                        <p style="text-align: right; color: white; margin-top: 20px">Welcome, <%= currentUser.name %>! </p>
+                    <% } else { %>
+                        <p style="text-align: right; color: white; margin-top: 20px">Welcome, Guest! </p>
+                    <% } %>
+                      
+                      <ul class="nav">
+                          <li><a href="/">Home</a></li>
+                          <li><a href="/airbnb"  class="active">Villas</a></li>
+                          <li><a href="/Activities">Activities</a></li>
+                          <li><a href="/Weather">Weather</a></li>
+                          <li><a href="/users/logout">Logout</a>
+                      </ul>   
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+    </header>
+    
+    <!-- ***** Header Area End ***** -->
+    
+    <div class="visit-country">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="section-heading">
+              <h2>Visit One Of Our Villas Now</h2>
+              <p>Experience luxury and tranquility at its finest. Come and visit our exquisite villas for an unforgettable getaway.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="items">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="item">
+                    <div class="row">
+                      <div class="col-lg-4 col-sm-5">
+                        
+                        <div class="image">
+                          <img src="\images\villa1\Exterior6.jpg" width="30px" height="230px" alt="">
+                        </div>
+                      </div>
+                      <div class="col-lg-8 col-sm-7">
+                        <div class="right-content">
+                          <h4>Chamgaia</h4>
+                          <span>East Mauritius</span>
+                          <div class="main-button">
+                            <a href="/Chamgaia">Explore More</a>
+                          </div>
+                          <p>Facing the iconic mountain of Le Morne Brabant and nestled in the authentic Valley of Chamarel, ChamGaia offers you the ultimate private eco-lodge experience.</p>
+                          <ul class="info">
+                            <li><i class="fa fa-star"></i> 5</li>
+                            <li><i class="fa fa-home"></i> SR1,560 night</li> 
+                            <li><i id="starRating1" class="fas fa-thumbs-up">    </i></li>
+                          </ul>
+                          <div class="text-button">
+                            <a >Need Directions ? <i class="fa fa-arrow-right"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="item">
+                    <div class="row">
+                      <div class="col-lg-4 col-sm-5">
+                        <div class="image">
+                          <img src="\images\villa2\test1.jpg" width="30px" height="230px" alt="">
+                        </div>
+                      </div>
+                      <div class="col-lg-8 col-sm-7">
+                        <div class="right-content">
+                          <h4>Villa Fauverelle</h4>
+                          <span>South Mauritius</span>
+                          <div class="main-button">
+                            <a href="\Fauverelle">Explore More</a>
+                          </div>
+                          <p>Located in Mahébourg, 1.6 miles from Bus Station Mahebourg and 19 miles from Le Touessrok Golf Course, Villa Fauverelle offers an open-air bath and air conditioning. This self-catered villa has a private pool, a garden, barbecue facilities, free Wifi and free private parking.</p>
+                          <ul class="info">
+                            <li><i class="fa fa-star"></i> 4</li>
+                            <li><i class="fa fa-home"></i> SR1,560 night</li>
+                            <li><i id="starRating2" class="fas fa-thumbs-up">    </i></li>
+                          </ul>
+                          <div class="text-button">
+                            <a >Need Directions ? <i class="fa fa-arrow-right"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="item last-item">
+                    <div class="row">
+                      <div class="col-lg-4 col-sm-5">
+                        <div class="image">
+                          <img src="\images\villa3\White Oaks Villas cover.jpg" width="30px" height="230px" alt="">
+                        </div>
+                      </div>
+                      <div class="col-lg-8 col-sm-7">
+                        <div class="right-content">
+                          <h4>White Oaks Villa</h4>
+                          <span>North Mauritius</span>
+                          <div class="main-button">
+                            <a href="\Whiteoaks">Explore More</a>
+                          </div>
+                          <p>Enjoy the freedom self-catering affords you and experience Mauritius on your own terms as Mauritius should be explored. Although self-catering, they are fully serviced luxury villas, with the care and assistance of our full time manager. They provide an ideal holiday venue for a couple, family or larger group.</p>
+                          <ul class="info">
+                            <li><i class="fa fa-star"></i> 3.5</li>
+                            <li><i class="fa fa-home"></i> SR1,560 night</li>
+                            <li><i id="starRating3" class="fas fa-thumbs-up">    </i></li>
+                          </ul>
+                          <div class="text-button">
+                            <a >Need Directions ? <i class="fa fa-arrow-right"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="side-bar-map">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13749480.941383038!2d43.31994358954681!3d-20.123855373964368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c504df94474c9%3A0x4203d9c2116bd031!2sMauritius!5e1!3m2!1sen!2ssa!4v1696865584141!5m2!1sen!2ssa"  width="100%" height="550px" frameborder="0" style="border:0; border-radius: 23px; " allowfullscreen=""></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+   
+  
+    <footer>
+      <div class="container">
+        <div class="row">
+          
+        </div>
+      </div>
+    </footer>
+  
+    </body>
+  
+  </html>
+  
+ <script>
+  // Get the star element
+  const starElement1 = document.getElementById('starRating1');
+
+  // Check if the rating is already stored in local storage
+  if (!localStorage.getItem('rating1')) {
+    // Set default rating to 0
+    localStorage.setItem('rating1', '0');
+  }
+
+  // Retrieve the stored rating
+  starElement1.textContent = localStorage.getItem('rating1');
+
+  // Add click event listener to the star element
+  starElement1.addEventListener('click', function() {
+    // Get the current rating
+    let currentRating = parseInt(starElement1.textContent);
+
+    // Check if the user has already liked the rating
+    if (localStorage.getItem('liked1')) {
+      // User has already liked, so remove the like
+      localStorage.removeItem('liked1');
+      // Decrease the rating by 1
+      currentRating--;
+    } else {
+      // User hasn't liked yet, so add the like
+      localStorage.setItem('liked1', 'true');
+      // Increase the rating by 1
+      currentRating++;
+    }
+
+    // Update the rating text
+    starElement1.textContent = currentRating;
+
+    // Save the updated rating to local storage
+    localStorage.setItem('rating1', currentRating);
+  });
+</script>
+
+
+<script>
+  // Get the star element
+  const starElement2 = document.getElementById('starRating2');
+
+  // Check if the rating is already stored in local storage
+  if (!localStorage.getItem('rating2')) {
+    // Set default rating to 0
+    localStorage.setItem('rating2', '0');
+  }
+
+  // Retrieve the stored rating
+  starElement2.textContent = localStorage.getItem('rating2');
+
+  // Add click event listener to the star element
+  starElement2.addEventListener('click', function() {
+    // Get the current rating
+    let currentRating = parseInt(starElement2.textContent);
+
+    // Check if the user has already liked the rating
+    if (localStorage.getItem('liked2')) {
+      // User has already liked, so remove the like
+      localStorage.removeItem('liked2');
+      // Decrease the rating by 1
+      currentRating--;
+    } else {
+      // User hasn't liked yet, so add the like
+      localStorage.setItem('liked2', 'true');
+      // Increase the rating by 1
+      currentRating++;
+    }
+
+    // Update the rating text
+    starElement2.textContent = currentRating;
+
+    // Save the updated rating to local storage
+    localStorage.setItem('rating2', currentRating);
+  });
+</script>
+
+
+<script>
+  // Get the star element
+  const starElement3 = document.getElementById('starRating3');
+
+  // Check if the rating is already stored in local storage
+  if (!localStorage.getItem('rating3')) {
+    // Set default rating to 0
+    localStorage.setItem('rating3', '0');
+  }
+
+  // Retrieve the stored rating
+  starElement3.textContent = localStorage.getItem('rating3');
+
+  // Add click event listener to the star element
+  starElement3.addEventListener('click', function() {
+    // Get the current rating
+    let currentRating = parseInt(starElement3.textContent);
+
+    // Check if the user has already liked the rating
+    if (localStorage.getItem('liked3')) {
+      // User has already liked, so remove the like
+      localStorage.removeItem('liked3');
+      // Decrease the rating by 1
+      currentRating--;
+    } else {
+      // User hasn't liked yet, so add the like
+      localStorage.setItem('liked3', 'true');
+      // Increase the rating by 1
+      currentRating++;
+    }
+
+    // Update the rating text
+    starElement3.textContent = currentRating;
+
+    // Save the updated rating to local storage
+    localStorage.setItem('rating3', currentRating);
+  });
+</script>

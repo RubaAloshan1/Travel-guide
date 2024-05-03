@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  
+
+  <link rel="stylesheet" href="/stylesheet/loginstyle.css">
+</head>
+<body>
+  <div class="container right-panel-active" id="container">
+ 
+    <!--Register input-->
+    <div class="form-container register-container">
+      <form action="/users/register" method="post">
+        <h1>Register here.</h1>
+        <input type="text" id="name" placeholder="Name" name="name">
+        <input type="email" id="email" placeholder="Email" name="username" required>
+        <input type="password" id="password" placeholder="Password" name="password">
+        <button>Register</button>
+      </form>
+        <span>or use your account</span>
+       
+    </div>
+
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1 class="title">Hello</h1>
+          <p>if You have an account, login here and have fun</p>
+          <button class="ghost" id="login"><a href="/login">Login</a>
+            <i class="lni lni-arrow-left login"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+</body>
+</html>

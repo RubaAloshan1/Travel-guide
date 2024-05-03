@@ -1,7 +1,7 @@
 ### Mauritius Travel Guide using nodejs/MongoDB
 Welcome to the Mauritius Travel Guide! This project is a comprehensive guide designed for tourists who are planning to visit Mauritius. It provides information on various activities, villas, weather, and serves as a one-stop resource for all your travel needs.
 
-## Features
+### Features
 Activities: Discover a wide range of exciting activities to explore in Mauritius, including water sports, hiking, cultural experiences, and more.
 Villas: Find the perfect accommodation for your stay in Mauritius, with detailed listings of villas, resorts, and hotels.
 Reviews and Ratings: Users can leave reviews and ratings on the villas they have visited, providing valuable insights and recommendations for fellow travelers.

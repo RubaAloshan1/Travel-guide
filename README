@@ -1,0 +1,33 @@
+### Mauritius Travel Guide using nodejs/MongoDB
+Welcome to the Mauritius Travel Guide! This project is a comprehensive guide designed for tourists who are planning to visit Mauritius. It provides information on various activities, villas, weather, and serves as a one-stop resource for all your travel needs.
+
+### Features
+Activities: Discover a wide range of exciting activities to explore in Mauritius, including water sports, hiking, cultural experiences, and more.
+Villas: Find the perfect accommodation for your stay in Mauritius, with detailed listings of villas, resorts, and hotels.
+Reviews and Ratings: Users can leave reviews and ratings on the villas they have visited, providing valuable insights and recommendations for fellow travelers.
+Weather: Stay informed about the current weather conditions in Mauritius and plan your activities accordingly.
+Home Page: The home page serves as the gateway to the entire website, providing an overview of the available features and navigation options.
+
+### Installation
+Once you have cloned or downloaded this repo you need to make sure you have Mongo DB installed then
+ 
+run the following command to bring all npm packages required for this project
+
+```
+npm install 
+```
+
+### Usage
+Sign up: Create an account with your email and password to access the Mauritius Travel Guide.
+Explore Activities: Browse through the extensive list of activities available in Mauritius, read descriptions, and find recommendations.
+Find Villas: Search for the ideal accommodation by exploring the villa listings, filtering by location, amenities, and price range.
+Leave Reviews and Ratings: Share your experiences by leaving reviews and ratings on the villas you have visited, helping fellow travelers make informed decisions.
+Check Weather: Stay updated on the current weather conditions in Mauritius by visiting the weather page.
+Navigate the Home Page: The home page provides quick access to all features and sections of the website.
+
+### Contributing
+This project was developed as part of a web development course. Contributions are not currently open to external contributors.
+
+### My Github
+RubaAloshan
+
